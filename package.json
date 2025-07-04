@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "node api.js && nuxt build",
+    "dev": "node api.js && nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -20,6 +20,7 @@
   "dependencies": {
     "@lucia-auth/adapter-mongodb": "^1.0.3",
     "@nuxt/image": "^1.7.0",
+    "node-fetch": "^3.3.2",
     "@pinia/nuxt": "^0.5.4",
     "@types/bcryptjs": "^2.4.6",
     "bcryptjs": "^2.4.3",
